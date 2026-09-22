@@ -40,8 +40,8 @@ html_content = f'''<!DOCTYPE html>
       font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       background-color: #cbd5e1;
       color: var(--text-body);
-      line-height: 1.4;
-      font-size: 12px;
+      line-height: 1.38;
+      font-size: 11.8px;
       -webkit-font-smoothing: antialiased;
       display: flex;
       flex-direction: column;
@@ -122,6 +122,16 @@ html_content = f'''<!DOCTYPE html>
       background-color: #e2e8f0;
     }}
 
+    .btn-home {{
+      background-color: #ffffff;
+      color: #2563eb;
+      border: 1px solid #bfdbfe;
+    }}
+
+    .btn-home:hover {{
+      background-color: #eff6ff;
+    }}
+
     /* ========================================================
        DOCUMENTO HOJA CARTA EXACTA (8.5in x 11in)
        ======================================================== */
@@ -144,7 +154,7 @@ html_content = f'''<!DOCTYPE html>
     .cv-sidebar {{
       background-color: var(--sidebar-bg);
       color: var(--sidebar-text);
-      padding: 0.44in 0.25in 0.38in 0.28in;
+      padding: 0.42in 0.24in 0.36in 0.26in;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -157,7 +167,7 @@ html_content = f'''<!DOCTYPE html>
     .sidebar-top-group {{
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 11px;
     }}
 
     /* Foto de Perfil circular */
@@ -168,8 +178,8 @@ html_content = f'''<!DOCTYPE html>
     }}
 
     .photo-circle {{
-      width: 130px;
-      height: 130px;
+      width: 126px;
+      height: 126px;
       border-radius: 50%;
       border: 4px solid #ffffff;
       box-shadow: 0 6px 16px rgba(15, 23, 42, 0.14);
@@ -210,12 +220,12 @@ html_content = f'''<!DOCTYPE html>
 
     /* Títulos de sección en sidebar */
     .sidebar-title {{
-      font-size: 11px;
+      font-size: 10.8px;
       font-weight: 800;
       letter-spacing: 0.8px;
       text-transform: uppercase;
       color: var(--primary);
-      margin-bottom: 5px;
+      margin-bottom: 4.5px;
       display: flex;
       align-items: center;
       gap: 6px;
@@ -231,9 +241,9 @@ html_content = f'''<!DOCTYPE html>
     .contact-list {{
       display: flex;
       flex-direction: column;
-      gap: 5.5px;
-      font-size: 11px;
-      line-height: 1.35;
+      gap: 5px;
+      font-size: 10.8px;
+      line-height: 1.32;
     }}
 
     .contact-item {{
@@ -258,7 +268,7 @@ html_content = f'''<!DOCTYPE html>
     }}
 
     .contact-text .label {{
-      font-size: 9.5px;
+      font-size: 9.2px;
       text-transform: uppercase;
       letter-spacing: 0.4px;
       color: var(--sidebar-muted);
@@ -267,23 +277,30 @@ html_content = f'''<!DOCTYPE html>
     }}
 
     .contact-text .val {{
-      font-size: 11px;
+      font-size: 10.8px;
       font-weight: 600;
       color: var(--primary-dark);
     }}
 
     .contact-text .email-val {{
-      font-size: 9.8px;
+      font-size: 9.6px;
       letter-spacing: -0.2px;
       color: var(--primary-dark);
       word-break: break-word;
+    }}
+
+    .contact-text .web-val {{
+      font-size: 9.8px;
+      font-weight: 700;
+      color: var(--accent);
+      text-decoration: none;
     }}
 
     /* Card de Disponibilidad en Sidebar */
     .availability-card {{
       background: #ecfdf5;
       border: 1px solid #a7f3d0;
-      padding: 6.5px 10px;
+      padding: 6px 9px;
       border-radius: 6px;
       display: flex;
       align-items: center;
@@ -300,7 +317,7 @@ html_content = f'''<!DOCTYPE html>
     }}
 
     .avail-text {{
-      font-size: 10px;
+      font-size: 9.8px;
       color: #065f46;
       font-weight: 700;
       line-height: 1.25;
@@ -308,7 +325,7 @@ html_content = f'''<!DOCTYPE html>
 
     /* Áreas de Competencia */
     .competency-group {{
-      margin-bottom: 5px;
+      margin-bottom: 4.5px;
     }}
 
     .competency-group:last-child {{
@@ -323,12 +340,12 @@ html_content = f'''<!DOCTYPE html>
     }}
 
     .competency-sub {{
-      font-size: 9.8px;
+      font-size: 9.6px;
       color: var(--sidebar-muted);
-      line-height: 1.35;
+      line-height: 1.34;
     }}
 
-    /* Habilidades Blandas (Tags en fondo blanco con sombra sutil) */
+    /* Habilidades Blandas */
     .soft-skills-tags {{
       display: flex;
       flex-wrap: wrap;
@@ -339,17 +356,17 @@ html_content = f'''<!DOCTYPE html>
       background: #ffffff;
       color: #1e293b;
       border: 1px solid #cbd5e1;
-      padding: 3px 7px;
+      padding: 3px 6.5px;
       border-radius: 4px;
-      font-size: 9.8px;
+      font-size: 9.6px;
       font-weight: 600;
       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
     }}
 
     .sidebar-footer {{
-      padding-top: 8px;
+      padding-top: 7px;
       border-top: 1px solid var(--sidebar-border);
-      font-size: 9.5px;
+      font-size: 9.2px;
       color: var(--sidebar-muted);
       text-align: center;
       line-height: 1.35;
@@ -361,7 +378,7 @@ html_content = f'''<!DOCTYPE html>
        ======================================================== */
     .cv-main {{
       background-color: #ffffff;
-      padding: 0.44in 0.42in 0.38in 0.38in;
+      padding: 0.42in 0.4in 0.36in 0.36in;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -373,7 +390,7 @@ html_content = f'''<!DOCTYPE html>
     .main-top-group {{
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 11px;
     }}
 
     /* Encabezados de sección principal */
@@ -386,11 +403,11 @@ html_content = f'''<!DOCTYPE html>
       display: flex;
       align-items: center;
       gap: 8px;
-      margin-bottom: 6px;
+      margin-bottom: 5.5px;
     }}
 
     .section-title {{
-      font-size: 12.8px;
+      font-size: 12.5px;
       font-weight: 800;
       letter-spacing: 0.8px;
       text-transform: uppercase;
@@ -408,7 +425,7 @@ html_content = f'''<!DOCTYPE html>
     .profile-card {{
       background-color: var(--card-bg);
       border-left: 3.5px solid var(--primary);
-      padding: 9px 13px;
+      padding: 8.5px 12px;
       border-radius: 0 6px 6px 0;
       border-top: 1px solid #f1f5f9;
       border-right: 1px solid #f1f5f9;
@@ -416,8 +433,8 @@ html_content = f'''<!DOCTYPE html>
     }}
 
     .profile-card p {{
-      font-size: 11px;
-      line-height: 1.5;
+      font-size: 10.8px;
+      line-height: 1.48;
       color: #334155;
       text-align: justify;
     }}
@@ -426,7 +443,7 @@ html_content = f'''<!DOCTYPE html>
     .experience-list {{
       display: flex;
       flex-direction: column;
-      gap: 9.5px;
+      gap: 9px;
     }}
 
     .job-entry {{
@@ -442,13 +459,13 @@ html_content = f'''<!DOCTYPE html>
     }}
 
     .job-role {{
-      font-size: 11.8px;
+      font-size: 11.5px;
       font-weight: 700;
       color: var(--primary-dark);
     }}
 
     .job-location {{
-      font-size: 10.5px;
+      font-size: 10.2px;
       color: #64748b;
       font-weight: 500;
       display: inline-flex;
@@ -457,7 +474,7 @@ html_content = f'''<!DOCTYPE html>
     }}
 
     .job-company {{
-      font-size: 10.8px;
+      font-size: 10.5px;
       font-weight: 600;
       color: var(--accent);
       margin-bottom: 2px;
@@ -466,9 +483,9 @@ html_content = f'''<!DOCTYPE html>
     .job-bullets {{
       list-style: none;
       padding: 0;
-      margin: 2px 0 0 0;
-      font-size: 10.5px;
-      line-height: 1.38;
+      margin: 1.5px 0 0 0;
+      font-size: 10.4px;
+      line-height: 1.37;
       color: #334155;
     }}
 
@@ -495,11 +512,11 @@ html_content = f'''<!DOCTYPE html>
     .dispo-box {{
       background-color: #f0fdf4;
       border: 1px solid #bbf7d0;
-      padding: 8px 12px;
+      padding: 7.5px 12px;
       border-radius: 6px;
-      font-size: 10.8px;
+      font-size: 10.5px;
       color: #166534;
-      line-height: 1.45;
+      line-height: 1.42;
     }}
 
     .dispo-box strong {{
@@ -582,6 +599,10 @@ html_content = f'''<!DOCTYPE html>
       <span>Currículum Vitae &bull; Ignacio Labrador</span>
     </div>
     <div class="toolbar-actions">
+      <a class="btn btn-home" href="index.html">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        Página Web
+      </a>
       <button class="btn btn-copy" onclick="copiarContacto()">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
         Copiar Contacto
@@ -632,6 +653,13 @@ html_content = f'''<!DOCTYPE html>
               <div class="contact-text">
                 <span class="label">Correo Electrónico</span>
                 <span class="val email-val">ignacio.labrador.rodriguez@gmail.com</span>
+              </div>
+            </a>
+            <a class="contact-item" href="https://ignacio-labrador.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              <div class="contact-text">
+                <span class="label">Sitio Web / Portafolio</span>
+                <span class="web-val">ignacio-labrador.vercel.app</span>
               </div>
             </a>
             <div class="contact-item">
@@ -836,7 +864,7 @@ html_content = f'''<!DOCTYPE html>
 
   <script>
     function copiarContacto() {{
-      const texto = "IGNACIO LABRADOR\\nTeléfono: 0422-1110096\\nEmail: ignacio.labrador.rodriguez@gmail.com\\nC.I.: 29.698.769";
+      const texto = "IGNACIO LABRADOR\\nTeléfono: 0422-1110096\\nEmail: ignacio.labrador.rodriguez@gmail.com\\nWeb: https://ignacio-labrador.vercel.app/\\nC.I.: 29.698.769";
       navigator.clipboard.writeText(texto).then(() => {{
         const toast = document.getElementById('toast');
         toast.classList.add('show');
@@ -851,7 +879,7 @@ html_content = f'''<!DOCTYPE html>
 </html>
 '''
 
-with open('index.html', 'w', encoding='utf-8') as f:
+with open('curriculum.html', 'w', encoding='utf-8') as f:
     f.write(html_content)
 
-print('Generated light-gray index.html successfully!')
+print('Generated curriculum.html with website URL successfully!')

@@ -1,26 +1,28 @@
-# Currículum Vitae - Ignacio Labrador
+# Ignacio Labrador | Perfil Profesional y Portafolio
 
-Currículum profesional de **Ignacio Labrador** diseñado en formato web HTML y optimizado para exportación directa a PDF en 1 sola página tamaño Carta (Letter 8.5" x 11").
+Sitio web personal y currículum vitae profesional de **Ignacio Labrador**, especialista en gestión operativa, atención al cliente de alto nivel y mantenimiento integral de instalaciones.
+
+- 🌐 **Sitio Web / Portafolio Oficial:** [https://ignacio-labrador.vercel.app/](https://ignacio-labrador.vercel.app/)
+- 💬 **WhatsApp Directo:** [+58 0422-1110096](https://wa.me/584221110096?text=Hola%20Ignacio,%20vi%20tu%20perfil%20web%20y%20me%20gustar%C3%ADa%20conversar%20contigo.)
+- ✉️ **Correo:** [ignacio.labrador.rodriguez@gmail.com](mailto:ignacio.labrador.rodriguez@gmail.com)
+
+---
+
+## 📸 Vista Previa del Currículum Oficial
 
 ![Vista Previa del Currículum](vista_previa_cv.png)
 
 ---
 
-## 📄 Archivos del Repositorio
+## 📂 Archivos del Proyecto
 
-- **`index.html`**: Currículum vitae web interactivo, responsive y con estilos de impresión optimizados.
-- **`curriculum_ignacio_labrador.pdf`**: Documento listo para postulación laboral en 1 sola página exacta.
-- **`foto_ignacio.png`**: Fotografía de perfil optimizada con marco circular.
-- **`build_cv.py`**: Script en Python para recompilar el HTML e incrustar la imagen en formato base64.
-
----
-
-## 🚀 Visualización y Uso
-
-1. Puedes abrir `index.html` en cualquier navegador web moderno (Google Chrome, Microsoft Edge, Mozilla Firefox, Safari).
-2. Para guardarlo en PDF:
-   - Haz clic en el botón superior **"Imprimir / Guardar en PDF"** (o usa el atajo `Ctrl + P`).
-   - Elige **"Guardar como PDF"** como destino.
-   - El documento está programado para ajustarse exactamente a 1 hoja sin páginas vacías.
-3. Para copiar los datos de contacto:
-   - Haz clic en **"Copiar Contacto"** en la barra superior.
+- **`index.html`**: Página web estilo portafolio / presentación personal con:
+  - Botón directo de **WhatsApp**
+  - Botón de **Descarga directa del Currículum en PDF**
+  - Acceso directo al **Portafolio en Vercel**
+  - Modal interactivo para visualizar el currículum en pantalla
+- **`curriculum.html`**: Versión web del currículum formal calibrada para **1 sola página tamaño Carta (Letter 8.5" x 11")**, con botón de impresión.
+- **`curriculum_ignacio_labrador.pdf`**: Documento oficial en PDF listo para enviar a procesos de selección (exactamente 1 página).
+- **`foto_ignacio.png`**: Fotografía circular optimizada con marco blanco.
+- **`build_portfolio.py`**: Script generador de la página web de presentación.
+- **`build_cv.py`**: Script generador del currículum imprimible y PDF.
